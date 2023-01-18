@@ -23,7 +23,7 @@
 # Get FA Volumes, filter and sort
   - name: Get FA Volumes
     uri:
-      url: "https://{{ faUrl }}/api/1.19/volume?filter=name='{{ volPrefix }}*'%20and%20name='*{{ volSuffix }}'&sort=name"
+      url: "https://{{ faUrl }}/api/1.19/volume?&sort=name"
       method: GET
       headers:
         Cookie: "{{ session.set_cookie }}"
