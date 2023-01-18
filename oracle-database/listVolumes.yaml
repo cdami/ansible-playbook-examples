@@ -25,8 +25,8 @@
     uri:
       url: "https://{{ faUrl }}/api/1.19/volume?&sort=name"
       method: GET
-      #headers:
-      #  Cookie: "{{ session.set_cookie }}"
+      headers:
+        Cookie: "{{ session.set_cookie }}"
       validate_certs: "no"
       return_content: "yes"
     register: faVols
