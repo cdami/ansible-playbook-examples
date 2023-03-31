@@ -1,0 +1,5 @@
+---
+  - name: List AWS Job ID
+    hosts: localhost
+    debug:
+      msg: The AWX JOB run ID is {{ lookup('env', "JOB_ID" }}
