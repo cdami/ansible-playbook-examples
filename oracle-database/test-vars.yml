@@ -2,6 +2,6 @@
   - name: Misc tests with Ansible vars
     hosts: localhost
     tasks:
-      -name: List AWS Job ID
+      - name: List AWS Job ID
         debug:
           msg: The AWX JOB run ID is {{ lookup('env', "JOB_ID" }}
