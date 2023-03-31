@@ -4,4 +4,4 @@
     tasks:
       - name: List AWS Job ID
         debug:
-          msg: The AWX JOB run ID is {{ lookup('env', "JOB_ID" }}
+          msg: The AWX JOB run ID is temp #{{ lookup('env', "JOB_ID" }}
